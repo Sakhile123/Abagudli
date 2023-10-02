@@ -25,14 +25,35 @@
     margin: 5px;
   }
 }
+section {
+            margin: 0;
+            padding: 0;
+        }
 
+        /* Media query for screens smaller than 768px (typical mobile width) */
+        @media (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+
+            .nav ul {
+                text-align: center;
+                padding: 0;
+                margin: 10px;
+            }
+
+            .nav ul li {
+                display: block;
+                margin: 5px;
+            }
+        }
 </style>
 </head>
 <body>
-   
-    <b>
-    
     <header>
+        <div class="logo">
+            <img src="Screenshot 2023-08-14 122937.png" style="width: 130px; height: 130px; float: left;">
+        </div>
         <h1 style="color:orange">Abagudli Security and MultiProjects</h2>
         <div class="nav">
             <ul>
@@ -41,12 +62,11 @@
                     <a href="#About">About</a>
                     <a href="#Services">Services</a>
                     <a href="#Contact">Contacts</a>
+                    <a href="images.html">Our Team</a>
                 
             </ul>
         </div>
-
     </header>
-
     <!--Home-->
     <section id="home" class="info" href="#Home" 
     style="background-image:url(desktop.jpg);background-repeat: no-repeat;background-size:cover;">
@@ -84,7 +104,7 @@
     <!--Home-->
 
     <!--About-->
-    <section href="#About" id="About" style="background-color: rgba(58, 57, 57, 0.774);">
+    <section href="#About" id="About" style="background-color: rgba(31, 30, 30, 0.774);">
         
     <h1>About Us</h1>
 

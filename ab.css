@@ -39,22 +39,20 @@ a {
     color: white;
     margin: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     display: inline-block; /* Make the links inline-block for spacing */
 }
 
 a:hover {
-    background-color: white;
-    color: black;
+  color: orange;
 }
 
 h1 {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    font-weight: bold; /* Use font-weight to set bold */
+    font-weight: bold;
     text-align: center;
-    background-color: black;
     color:white;
 }
 
@@ -99,7 +97,23 @@ span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@media (max-width: 768px) {
+    .nav ul li {
+        display: block;
+        margin: 5px;
+    }
+}
 
+@media (max-width: 480px) {
+    /* Adjust styles for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
 
 
 
